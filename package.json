@@ -1,0 +1,46 @@
+{
+  "name": "requestsec",
+  "version": "1.0.0",
+  "description": "This library scans for threats that have made it to the application.",
+  "main": "dist/requestsec.js",
+  "module": "dist/requestsec.esm.js",
+  "browser": "dist/requestsec.umd.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin typescript",
+    "clean": "rm -rf ./dist",
+    "lint": "eslint . --ext .js,.ts",
+    "lint-fix": "eslint . --ext .js,.ts --fix",
+    "test": "node test/spec.ts",
+    "pretest": "npm run build",
+    "security": "pnpm audit --audit-level=high"
+  },
+  "author": "Kai Herrera",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/node": "^18.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "pnpm": "^7.7.0",
+    "prettier": "^2.7.1",
+    "rollup": "^2.77.2",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}

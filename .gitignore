@@ -1,0 +1,13 @@
+.DS_Store
+/node_modules
+dist
+_actual
+_actual.js
+coverage
+.commithash
+.idea
+.eslintcache
+test/_tmp
+test/hooks/tmp
+test/tmp
+test/typescript/typings
