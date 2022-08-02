@@ -6,7 +6,7 @@ import pkg from './package.json';
 
 export default [
   {
-    input: 'src/index.ts', // your entry point
+    input: 'lib/main.ts', // your entry point
     output: {
       name: 'requestsec', // package name
       file: pkg.browser,
@@ -25,7 +25,7 @@ export default [
     ],
   },
   {
-    input: 'src/index.ts', // your entry point
+    input: 'lib/main.ts', // your entry point
     output: [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' },

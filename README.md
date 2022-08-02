@@ -1,7 +1,7 @@
 # RequestSec
 
 RequestSec by CyberVISOR is the first library to monitor network connections at the most critical layer, the application. 
-We can identify and stop threats in real-time with our proprietary analysis platform. 
+We can identify and stop threats in real-time with our proprietary analysis platform. Live patching with the ability to 
 
 
 pnpm
@@ -22,9 +22,13 @@ Program:
 
 Functionality:
 1. Receive the http request as a string
-2. Send data to a lambda (this can then target kafka, a database, S3, etc)
+1. Receive the http resposne as a string
+1. Send data to a lambda (this can then target kafka, a database, S3, etc)
     1. https://stackoverflow.com/questions/57105918/push-messages-from-aws-lambda-to-kafka
 
+
+Sanitize the string for the request / response
+- Method - https://github.com/ionic-team/ionic-framework/blob/main/core/src/utils/sanitization/index.ts
 
 Content:
 
