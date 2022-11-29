@@ -1,8 +1,14 @@
 # RequestSec
 
-RequestSec by CyberVISOR is the first library to monitor network connections at the most critical layer, the application. 
-We can identify and stop threats in real-time with our proprietary analysis platform. Live patching with the ability to 
+__This project has been halted as API Security has been blowing up lately, even though this hype just seems to be the latest iteration of RASP, Runtime Application Self Protection (I knew about neither of these things until learning more about this section of CyberSecurity).__
 
+
+
+RequestSec by CyberVISOR is a library that monitors network connections at the most critical layer, the application. 
+We can identify and stop threats in real-time with our proprietary analysis platform. Live patching with the ability to... 
+
+
+__Incoherent Notes & Thoughts:__
 
 pnpm
 
